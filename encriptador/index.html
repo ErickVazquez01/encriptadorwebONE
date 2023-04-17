@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="img/aluraLOGO.png" alt="Logo de ALURA LATAM" />
+        
+    </header>
+    <main>
+        <div class="container">
+            <div class="container_texto">
+                <textarea id="texto" placeholder="Ingresa el texto aquí..."></textarea>
+                <div class="info">
+                    
+                    <img src="img/Vector.png" alt="Imagen de candado" />
+                    <p>El texto debe estár en minúsculas</p>
+                </div>
+                
+                <div class="buttons">
+                    <button class="button-1" onclick="encript()">Encriptar</button>
+                    <button class="button-2" onclick="desencript()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="container_resultado">
+                <div class="container_resultado_encriptado" id="resultados"></div>
+                <div class="container_resultado_img" id="imagen">
+                </div>
+                <div class="container_resultados_center">
+                   
+                        <div class="container_resultado_title" id="txt1">
+                            <h2>Ningún mensaje fue encontrado</h2>
+                        </div>
+                        <div class="container_resultado_text" id="txt2">
+                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                    
+                    <button class="button-copy" onclick="copy()" id="copy">Copiar texto</button>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
